@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auriel Fritz - Personal portfolio, PC specs, skills, and tech tinkering projects.">
   <title>Hi I'm Auriel Fritz</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.png">
@@ -12,8 +13,25 @@
 <body>
 
   <div class="wrapper">
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#WhoAmI">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#mypcspecs">PC Specs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <div class="hero">
-      <p class="mynamee">mrTektinker</p>
+      <p class="mynamee" id="home">mrTektinker</p>
       <div class="location">
 
         <img width="20" height="20" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1" />
@@ -36,7 +54,7 @@
 
     <div class="section">
       <h2 class="section-title">$ WhoAmI</h2>
-      <div class="intro-text">
+      <div class="intro-text" id="WhoAmI">
         <p>Just a guy who loves PC with a curiosity for exploring new stuff.</p>
       </div>
     </div>
@@ -62,7 +80,7 @@
     </div>
 
     <div class="section">
-      <h2 class="section-title">$ skills ---list</h2>
+      <h2 class="section-title" id="skills">$ skills ---list</h2>
       <div class="tech-list" style="font-weight: lighter; font-size: 1.5rem;">
         <div class="tech-tag">HTML5</div>
         <div class="tech-tag">CSS3</div>
@@ -92,7 +110,7 @@
       </ul>
     </div>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <h2 class="contact-intro-text">`Connect with me twin`~</h2>
       <p>Let's learn together and build cool stuff!</p>
       <div class="contact-links">
@@ -100,11 +118,46 @@
         <a href="mailto:aurieldamasole@gmail.com" class="btn" target="_blank">Email</a>
         <a href="https://github.com/aurielfritz27" class="btn" target="_blank">Github</a>
         <a href="#" class="btn social-link disabled" title="not available">Valorant (Coming Soon)</a>
-
       </div>
+
       <p style="margin-top: 40px; color: #999999; font-weight: bold;">&copy 2025 | They got rumboids! | Auriel Fritz L.
         Damasole</p>
     </section>
+
+    <div class="section">
+
+      <h2 class="section-title" id="mypcspecs">$-- MY PC SPECS</h2>
+      <details>
+        <summary>Click to view my PC SPECS and Peripherals</summary>
+        <div class="pc-section">
+          <ul>
+            <li class="pcspecs"><strong>CPU:</strong> AMD RYZEN 5 5600G</li>
+            <li class="pcspecs"><strong>GPU:</strong> Sapphire RX 6600 8GB</li>
+            <li class="pcspecs"><strong>Motherboard: </strong>MSI B450M A PRO MAX II</li>
+            <li class="pcspecs"><strong>RAM:</strong> 16GB DDR4 3200MHZ</li>
+            <li class="pcspecs"><strong>Storage: </strong>Storage 1: 256GB(OS) | Storage 2: 1TB SATA SSD | Storage 3:
+              256GB SATA SSD</li>
+            <li class="pcspecs"><strong>PSU: </strong>Generic 750W 80+ Bronze</li>
+            <li class="pcspecs"><strong>OS: </strong>Windows 11</li>
+          </ul>
+
+          <ul>
+            <h4 class="section-title">Peripherals</h4>
+            <li class="pcspecs"><strong>Monitor: </strong>Acer EK251q P6BI 144Hz 25"</li>
+            <li class="pcspecs"><strong>Mouse: </strong>Aula SC580</li>
+            <li class="pcspecs"><strong>Keyboard: </strong>Aula F87</li>
+            <li class="pcspecs"><strong>Headset: </strong>Rapoo VH310</li>
+            <li class="pcspecs"><strong>Controller: </strong>8bitdo 2C Wired</li>
+          </ul>
+
+          <h1 class="psunote disabled">I’ll be upgrading my generic PSU to a trusted, branded power supply soon.</h1>
+        </div>
+
+      </details>
+
+    </div>
+
+
 
     <div class="section">
       <div class="mymods disabled">
