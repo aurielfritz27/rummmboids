@@ -403,6 +403,103 @@ summary {
   margin-bottom: 50px;
 }
 
+ /*BACK TO TOP BUTTON*/
+ .back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #1b1b1b;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    z-index: 1001;
+    transition: all 0.4s ease;
+    box-shadow: rgba(158, 158, 158, 0.315) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 0;
+  }
+  
+
+  .back-to-top-btn:hover {
+    background-color: #ffffff;
+    color: #1b1b1b;
+    transform: translateY(-5px);
+  }
+  
+  .back-to-top-btn svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .back-to-top-btn:hover svg {
+    transform: translateY(-3px);
+  }
+   /*START OF MEDIA QUERIES IN BACK TO TOP BUTTON*/
+@media (max-width: 768px) {
+    .back-to-top-btn {
+      width: 45px;
+      height: 45px;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .back-to-top-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .back-to-top-btn {
+      width: 40px;
+      height: 40px;
+      bottom: 15px;
+      right: 15px;
+    }
+    
+    .back-to-top-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+
+  @media (max-width: 320px) {
+    .back-to-top-btn {
+      width: 35px;
+      height: 35px;
+      bottom: 10px;
+      right: 10px;
+    }
+    
+    .back-to-top-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  /*END OF MEDIA QUERIES IN BACK TO TOP BUTTON*/
+
+  @media (max-height: 500px) and (orientation: landscape) {
+    .back-to-top-btn {
+      bottom: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media print {
+    .back-to-top-btn {
+      display: none !important;
+    }
+  }
 
 @media (max-width: 768px) {
   .hero h1 {
