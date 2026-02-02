@@ -16,8 +16,8 @@
     console.log(
       `👋 Welcome to my ahh website 🚀`
     )
-      console.log(
-    `%c
+    console.log(
+      `%c
     ╔══════════════════════════════╗
     ║  PC Specs Detected:          ║
     ║  • AMD Ryzen: ✓             ║
@@ -25,12 +25,12 @@
     ║  • Generic PSU: ⚠️          ║
     ║  • GPU DESHROUDING: ✓       ║
     ╚══════════════════════════════╝`,
-    'color: #00ff9d; background: #111; padding: 10px; border: 1px solid #00ff9d;'
-  );
-   console.log(
-    `%c📢 PSA: "They got rumboids!" - Local tech wisdom`,
-    'color: orange; font-weight: bold;'
-  );
+      'color: #00ff9d; background: #111; padding: 10px; border: 1px solid #00ff9d;'
+    );
+    console.log(
+      `%c📢 PSA: "They got rumboids!" - Local tech wisdom`,
+      'color: orange; font-weight: bold;'
+    );
   </script>
 
   <div class="wrapper">
@@ -197,6 +197,30 @@
       </div>
     </div>
   </div>
+
+  <button id="backToTop" class="back-to-top-btn" title="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15L12 9L6 15" />
+    </svg>
+  </button>
+
+  <script>
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) {
+        backToTopBtn.style.display = 'flex';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 
 </html>
